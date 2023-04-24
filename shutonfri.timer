@@ -1,0 +1,10 @@
+[Unit]
+Description= Timer para shutonfri, los viernes a las 22 horas
+
+[Timer]
+Unit=shutonfri.service
+OnCalendar=Mon *-*-* 23:23:00
+Persistent=false
+
+[Install]
+WantedBy=timers.target
